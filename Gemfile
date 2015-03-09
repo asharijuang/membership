@@ -29,6 +29,8 @@ gem 'turbolinks'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'hirb'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
