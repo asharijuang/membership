@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Description
+Aplikasi membership management
 
-Things you may want to cover:
+Requirement
+- Pengunjung dapat mendaftar sebagai member
+- Member yang sudah terdaftar dapat login
+- Member dapat post pengumuman
+- Member dapat melihat pengumuman yang sesuai dengan minatnya
 
-* Ruby version
+System Requirement
+* Ruby 2.1.5
+* Rails 4.2.0
+* Database Sqlite
 
-* System dependencies
+How to install
+1. Open Terminal
+2. Clone this project from atau ketik 
+<tt>$git clone https://github.com/asharijuang/membership.git</tt>
+3. Run bundle untuk download dependency 
+<tt>$bundle</tt>
+4. Jalankan migrasi database
+<tt>$rake db:migrate</tt>
+5. Jalankan server
+<tt>$rails server atau $rails s</tt>
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Deployment instructions
+Untuk testing aplikasi kita bisa menggunakan layanan dari heroku. Silahkan daftar pada site http://heroku.com
