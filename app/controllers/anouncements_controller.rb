@@ -26,6 +26,7 @@ class AnouncementsController < ApplicationController
     if @anouncement.save
       redirect_to @anouncement, notice: 'Anouncement was successfully created.'
     else
+      # cari halaman viw dengan nama file new.html.erb
       render :new
     end
   end
