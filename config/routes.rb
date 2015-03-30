@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  resources :categories
+
   # root path akan mengarahkan pada home controller dan methods index
   root'home#index'
 
   get 'users/index'
-
-  resources :categories
 
   resources :anouncements
   # get '/anouncements', to: 'anouncements#index'
