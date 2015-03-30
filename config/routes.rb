@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :categories
+  resources :users
 
   # root path akan mengarahkan pada home controller dan methods index
   root'home#index'
