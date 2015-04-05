@@ -16,7 +16,14 @@
             <li><a href="/categories">Category</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Login</a></li>
+            <% if session[:user] %>
+            Hello <%= (user = User.find(session[:user])).name %>
+            <li><%= link_to "Signout", session_path(user), method: :delete %></li>
+          <% else %>
+            <li><%= link_to "Register", new_user_path %></li>
+            <li><%= link_to "Login", new_session_path %></li>
+          <% end %>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
