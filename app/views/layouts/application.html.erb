@@ -10,8 +10,14 @@
 
 <%= render 'layouts/navbar' %>
 <div class="container">
-<%= yield %>
-<%= render 'layouts/footer' %>
+ <% if notice %>
+      <div class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger"><%= alert %></div>
+    <% end %>
+	<%= yield %>
 </div>
+<%= render 'layouts/footer' %>
 </body>
 </html>
