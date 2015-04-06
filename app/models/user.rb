@@ -14,8 +14,8 @@ class User < ActiveRecord::Base
     validates :password, length: { minimum: 6 }
 
     def self.authenticate_user(email, password)
-        user = find_by(email: 'asharijuang@me.com')
-        if user && user.authenticate('password')
+        user = find_by(email: email)
+        if user && user.authenticate(password)
            user
         else
            nil
